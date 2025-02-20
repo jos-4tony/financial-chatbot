@@ -1,0 +1,39 @@
+Financial Data Chatbot Documentation
+Summary
+The Financial Data Chatbot is designed to provide insights and answers related to financial metrics from a dataset loaded from an Excel file. It utilizes pandas for data manipulation and responds to user queries about total revenue, net income, total assets, total liabilities, cash flow, revenue growth, averages, and company performance metrics.
+
+Functionality
+The chatbot can handle the following types of queries:
+
+Total Revenue Queries:
+
+Total Revenue for a Company: Provides total revenue for a specified company in a specified year or across all years.
+Average Total Revenue for a Company: Calculates the average total revenue for a specified company across all available years.
+Total Revenue Across All Companies: Gives the total revenue aggregated across all companies in the dataset.
+Net Income Queries:
+
+Net Income for a Company: Provides net income for a specified company in a specified year.
+Average Net Income for a Company: Calculates the average net income for a specified company across all available years.
+Total Assets and Total Liabilities Queries:
+
+Total Assets and Total Liabilities for a Company: Provides total assets and total liabilities for a specified company in a specified year.
+Average Total Assets and Total Liabilities for a Company: Calculates the average total assets and total liabilities for a specified company across all available years.
+Cash Flow Queries:
+
+Cash Flow from Operating Activities for a Company: Provides cash flow from operating activities for a specified company in a specified year.
+Average Cash Flow from Operating Activities for a Company: Calculates the average cash flow from operating activities for a specified company across all available years.
+Revenue Growth Queries:
+
+Revenue Growth Rate for a Company: Calculates the revenue growth rate for a specified company in a specified year or across all available years.
+Average Revenue Growth Rate for a Company: Calculates the average revenue growth rate for a specified company across all available years.
+
+Average Queries:
+
+Average of a Metric Across All Companies: Calculates the average value of a specified metric (e.g., total revenue, net income) across all companies and all available years.
+
+Limitations
+Data Specificity: Queries are limited to the dataset provided in the Excel file (Book1.xlsx). Queries outside the scope of this dataset will not return meaningful results.
+Exact Query Format: Queries need to closely match predefined formats to be processed correctly. Variations in query structure may lead to incorrect or no responses.
+Error Handling: Basic error handling is implemented for file loading and data parsing errors. However, more sophisticated error handling for unexpected user inputs or data issues could be added.
+Usage
+The chatbot is interactive and prompts the user for queries related to financial data. It processes the query based on predefined functions and returns the relevant information.
